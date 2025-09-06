@@ -10,7 +10,9 @@ import (
 
 func main() {
 	app := fiber.New()
-	app.Use(logger.New())
+	app.Use(logger.New(logger.Config{
+		Format: "[${time}] ${ip} - ${status} ${method} ${path}\n",
+	}))
 
 	app.Get("/users", handlers.GetUsers)
 	app.Get("/users/:userId", handlers.GetUser)
