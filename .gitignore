@@ -1,4 +1,6 @@
 # Binaries
+go-fiber-api
+
 *.exe
 *.out
 *.o
