@@ -12,7 +12,8 @@ go run web.go
 ## API Endpoints
 
 - `GET /users` - Get all users
-- `GET /users/:userId` - Get user by ID
+- `GET /users/:userId` - Get user by ID- `GET /users/search` - Search users by name or email
+- `GET /users/search` - Search users by name or email
 - `POST /users` - Create new user
 - `PUT /users/:userId` - Update user
 - `DELETE /users/:userId` - Delete user
